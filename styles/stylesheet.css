@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(194, 121, 26);
+    display:grid;
+    grid-template-rows: 1fr 1fr auto;
+}
+main {
+    display: grid;
+    grid-template-rows: 10% 80%10%;
+}
