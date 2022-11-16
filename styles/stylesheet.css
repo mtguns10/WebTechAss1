@@ -59,16 +59,31 @@ div.top-buttons{
     justify-content: space-between;
     margin: 10px;
 }
-div.bottom-buttons{
-    display: flex;
-    justify-content: flex-end;
+div.top-buttons *{
+    padding-left: 12px;
+    padding-right: 12px;
 }
-
 .new-note-button{
     background-color: #5394A0;
 }
 .dark-theme-button{
     background-color: #6F6A87;
+}
+div.bottom-buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+div.bottom-buttons *{
+    margin-left: 13px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.save-button{
+    background-color:#5394A0;
+}
+.cancel-button{
+    background-color: #D9827C;
 }
 footer{
     display: grid;
@@ -76,8 +91,10 @@ footer{
     justify-content: center;
 }
 footer h3{
-    text-align: center;
-    margin-bottom: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:3px;
     font-family: Noto Sans;
     color: #3f8383;
 }
