@@ -1,0 +1,171 @@
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background-color: #f2e9dd;
+    margin: 0%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr;
+}
+
+body>header {
+    text-align: center;
+    font-family: Noto Sans;
+    color: #2d7490;
+}
+
+header>h1{
+    margin-top: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+body>section {
+    background-color: #faf4ed;
+    border-style: groove;
+    font-family: Noto Sans;
+    font-size: 80%;
+    color: #2d7490;
+}
+
+section>ul {
+    list-style-type: square;
+}
+
+section h2 {
+    margin: 10px;
+}
+
+section ul {
+    margin: 0px;
+}
+
+main {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 10% 65% 10% 15%;
+}
+
+.textbox {
+    display: flex;
+    margin-top: 10px;
+    width: 95%;
+    justify-self: center;
+}
+
+textarea {
+    background-color: #F9F3EC;
+    border-color: #77a7eb;
+    border-width: 3px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.buttons {
+    border-radius: 8px;
+    border-style: none;
+    color: white;
+    height: 3em;
+}
+
+div.top-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 10px;
+}
+
+div.top-buttons * {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.new-note-button {
+    background-color: #5394A0;
+}
+
+.dark-theme-button {
+    background-color: #6F6A87;
+}
+
+div.bottom-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+div.bottom-buttons * {
+    margin-left: 13px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.save-button {
+    background-color: #5394A0;
+}
+
+.cancel-button {
+    background-color: #D9827C;
+}
+
+footer {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+}
+
+footer h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    font-family: Noto Sans;
+    color: #2d7490;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+    body>section{
+        grid-column: 1;
+        grid-area: 1/1/span4;
+        border-style: none;
+    }
+    header{
+        grid-column: 2;
+    }
+    main{
+        grid-area: 2/2/-1
+    }
+    nav{
+        justify-content: flex-end;
+        margin-right: 1%;
+    }
+    nav *{
+        margin-right: 1%;
+    }
+
+    .dark-theme-button{
+        margin-right: 1%;
+    }
+    .cancel-button{
+        margin-right: 1%;
+    }
+    .new-note-button{
+        margin-left: 1%;
+    }
+}
