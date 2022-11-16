@@ -12,6 +12,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <header>
+            <h1>Take Better Notes</h1>
+            <nav>
+                <a>About</a>
+                <a>Docs</a>
+            </nav>
+        </header>
         <section>
             <h2>My Notes</h2>
             <ul>
@@ -20,29 +27,31 @@
             </ul>
         </section>
         <main>
-            <h1>Take Better Notes</h1>
-            <nav>
-                <a>About</a>
-                <a>Docs</a>
-            </nav>
-            <top-buttons>
-                <button class="new-note-button">New Note</button>
-                <button class="dark-theme-button">Dark Theme</button>
-            </top-buttons>
-            <buttom-buttons>
-                <button class="save-button">Save</button>
-                <button class="cancel-button">Cancel</button>
-            </buttom-buttons>
+            <div class="top-buttons">
+                <button class="new-note-button buttons">New Note</button>
+                <button class="dark-theme-button buttons">Dark Theme</button>
+            </div>
+            <section class="textbox">
+                <textarea>This is a placeholder</textarea>
+            </section>
+            <div class="buttom-buttons">
+                <button class="save-button buttons">Save</button>
+                <button class="cancel-button buttons">Cancel</button>
+            </div>
             <footer>
                 <h3>Keep in Touch</h3>
-                <a>
-                    <img src="/Misc/images/linkedin_circle.webp" alt="LinkedIn"
-                        width="50" height="50">
-                </a>
-                <a>
-                    <img src="/Misc/images/Internet_Line.webp" alt="" width="50"
-                        height="50">
-                </a>
+                <div>
+                    <a>
+                        <img src="/Misc/images/linkedin_circle.webp"
+                            alt="LinkedIn"
+                            width="30" height="30">
+                    </a>
+                    <a>
+                        <img src="/Misc/images/Internet_Line.webp" alt=""
+                            width="30px"
+                            height="30px">
+                    </a>
+                </div>
             </footer>
         </main>
     </body>
