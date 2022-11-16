@@ -22,7 +22,6 @@ body > section{
     font-family: Noto Sans;
     font-size:80%;
     color: #3f8383;
-    font-family: ;
 }
 section > ul{
     list-style-type:square;
@@ -37,6 +36,39 @@ main {
     display: grid;
     height: 100%;
     grid-template-rows: 10% 65% 10% 15%;
+}
+.textbox{
+    display: flex;
+    margin-top: 10px;
+    width: 95%;
+    justify-self: center;
+}
+textarea{
+    background-color: #F9F3EC;
+    width: 100%;
+    border-radius: 5px;
+}
+.buttons{
+    border-radius: 8px;
+    border-style: none;
+    color: white;
+    height: 3em;
+}
+div.top-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+div.bottom-buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.new-note-button{
+    background-color: #5394A0;
+}
+.dark-theme-button{
+    background-color: #6F6A87;
 }
 footer{
     display: grid;
@@ -53,8 +85,4 @@ footer div{
     display: flex;
     justify-content: center;
 }
-div.top-buttons{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
-}
+
